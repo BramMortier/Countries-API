@@ -1,0 +1,18 @@
+html[data-darkmode="off"]{
+  --Input: hsl(0, 0%, 52%);
+  --Input-Shadow: hsl(0, 0%, 85%);
+  --Background: hsl(0, 0%, 98%);
+  --Elements: hsl(0, 0%, 100%);
+  --Text: hsl(200, 15%, 8%);
+}
+
+html[data-darkmode="on"]{
+  --Elements: hsl(209, 23%, 22%);
+  --Background: hsl(207, 26%, 17%);
+  --Very-Dark-Blue: hsl(200, 15%, 8%);
+  --Text: hsl(0, 0%, 100%);
+  --Input-Shadow: hsl(200, 15%, 8%);
+}
+
+$Main-Font: 'Nunito Sans',
+sans-serif;

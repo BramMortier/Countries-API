@@ -1,0 +1,52 @@
+header {
+  background-color: var(--Elements);
+  box-shadow: 0 -5px 20px var(--Input-Shadow);
+  justify-content: center;
+  width: 100vw;
+  margin-bottom: 5rem;
+  @include responsive(Sdesktop){
+    margin-bottom: 3rem;
+  }
+
+  .header-container {
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 2rem 0;
+    @include responsive(Sdesktop){
+      padding: 1.4rem 0rem;
+      width: 90%;
+    }
+
+    .dark-mode-toggle {
+      align-items: center;
+      cursor: pointer;
+      padding: 0.5rem 1.5rem;
+      border-radius: 50px;
+      transition: background-color ease-in-out 200ms;
+      &:hover {
+        background-color: var(--Input-Shadow);
+      }
+      @include responsive(tablet) {
+        background-color: var(--Input-Shadow);
+        padding: 0.5rem 1rem;
+      }
+
+      h2 {
+        @include responsive(Lmobile){
+          display: none;
+        }
+      }
+
+      i {
+        color: var(--Text);
+        font-size: 1.6rem;
+        margin-right: 1rem;
+        @include responsive(Lmobile) {
+          display: flex;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

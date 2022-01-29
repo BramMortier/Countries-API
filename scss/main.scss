@@ -1,0 +1,14 @@
+// utility
+
+@import './util/_variables';
+@import './util/_breakpoints';
+@import './util/_typography/';
+@import './util/_uitlClasses';
+
+// components
+
+@import './components/_body';
+@import './components/_header';
+@import './components/_searchbar';
+@import './components/_resultCard';
+@import './components/_detailPage';

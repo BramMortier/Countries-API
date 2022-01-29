@@ -1,0 +1,141 @@
+.search-container {
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  @include responsive(Sdesktop) {
+    width: 90%;
+  }
+  @include responsive(Lmobile){
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  .searchbar {
+    background-color: var(--Elements);
+    align-items: center;
+    width: 30%;
+    padding: 1.4rem 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 14px var(--Input-Shadow);
+    @include responsive(Sdesktop){
+      padding: 1.2rem 2rem;
+    }
+    @include responsive(tablet) {
+      width: 50%;
+    }
+    @include responsive(Lmobile) {
+      margin-bottom: 2rem;
+      height: 60px;
+      width: 80%;
+    }
+    @include responsive(Mmobile){
+      width: 100%;
+      padding: 1rem 1.5rem;
+      height: 50px;
+    }
+
+    i {
+      margin-right: 2rem;
+      color: var(--Text);
+      font-size: 1.2rem;
+      align-self: center;
+    }
+
+    input {
+      height: 100%;
+      width: 80%;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      color: var(--Text);
+
+      &::placeholder {
+        color: var(--Text);
+        font-size: 1.2rem;
+      }
+      @include responsive(Mmobile) {
+        &::placeholder {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .filter-container {
+    position: relative;
+    
+    .filter {
+      cursor: pointer;
+      align-items: center;
+      border-radius: 5px;
+      background-color: var(--Elements);
+      border: none;
+      outline: none;
+      box-shadow: 0 0 14px var(--Input-Shadow);
+      padding: 1.4rem 2rem;
+      appearance: none;
+      font-size: 1.2rem;
+      transition: background-color ease-in-out 200ms;
+      & i {
+        color: var(--Text);
+        margin-left: 3rem;
+        font-size: 0.8rem;
+        @include responsive(Lmobile){
+          margin-left: 1.5rem;
+        }
+      }
+      &:hover {
+        background-color: var(--Input-Shadow);
+        cursor: pointer;
+      }
+      @include responsive(Sdesktop){
+        padding: 1.2rem 2rem;
+      }
+      @include responsive(Lmobile){
+        width: 240px;
+        height: 60px;
+      }
+      @include responsive(Mmobile) {
+        width: 220px;
+        padding: 1rem 1.5rem;
+        height: 50px;
+      }
+    }
+
+    .options-container {
+      position: absolute;
+      display: none;
+      width: 100%;
+      border-radius: 5px;
+      top: 85px;
+      left: 0;
+      background-color: var(--Elements);
+      box-shadow: 0 0 14px var(--Input-Shadow);
+      @include responsive(Sdesktop){
+        top: 75px;
+      }
+      @include responsive(Lmobile){
+        width: 240px;
+        top: 65px;
+      }
+      @include responsive(Mmobile) {
+        width: 220px;
+        top: 55px;
+      }
+
+      &.filter-menu-open {
+        display: block;
+      }
+
+      .option {
+        padding: 1rem 2rem;
+        transition: background-color  ease-in-out 200ms;
+        &:hover {
+          background-color: var(--Input-Shadow);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

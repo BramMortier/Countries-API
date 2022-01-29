@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+body {
+  font-family: $Main-Font;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--Text);
+  @include responsive(Sdesktop){
+    font-size: 1.6rem;
+  }
+  @include responsive(Mmobile){
+    font-size: 1.2rem;
+  }
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--Text);
+  @include responsive(Sdesktop){
+    font-size: 1.2rem;
+  }
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+  color: var(--Text);
+  @include responsive(Sdesktop){
+    font-size: 1.1rem;
+  }
+  @include responsive(Mmobile){
+    font-size: 1rem;
+  }
+}
+
+span {
+  font-weight: 600;
+  color: var(--Input);
+}
+
+html[data-darkmode="on"] span{
+  font-weight: 300;
+}
+
+.dark-mode-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--Text);
+  @include responsive(Sdesktop){
+    font-size: 1.2rem;
+  }
+  @include responsive(Mmobile){
+    font-size: 1rem;
+  }
+}
+
+.filter-text {
+  font-weight: 600;
+  color: var(--Text);
+  @include responsive(Sdesktop){
+    font-size: 1.2rem;
+  }
+  @include responsive(Mmobile) {
+    font-size: 1rem;
+  }
+}
+
+.option {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--Text);
+  @include responsive(Sdesktop){
+    font-size: 1.2rem;
+  }
+  @include responsive(Mmobile){
+    font-size: 1rem;
+  }
+}

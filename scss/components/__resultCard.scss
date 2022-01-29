@@ -1,0 +1,36 @@
+.search-result-card {
+  background-color: var(--Elements);
+  box-shadow: 0 0 14px var(--Input-Shadow);
+  border-radius: 10px;
+  width: 100%;
+  transition: transform ease-in-out 300ms;
+  &:hover {
+    transform: scale(110%);
+    cursor: pointer;
+  }
+
+  .country-img {
+
+    img {
+      height: 270px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      width: 100%;
+      object-fit: cover;
+      @include responsive(Sdesktop) {
+        height: 200px;
+      }
+    }
+  }
+
+  .country-info {
+    padding: 2rem 2rem 4rem 2rem;
+    @include responsive(Sdesktop) {
+      padding: 1.5rem 1.5rem 3rem 1.5rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+  }
+}
